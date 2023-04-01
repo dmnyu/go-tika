@@ -1,4 +1,4 @@
-module github.com/google/go-tika
+module github.com/dmnyu/go-tika
 
 go 1.19
 
