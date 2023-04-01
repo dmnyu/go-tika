@@ -241,18 +241,34 @@ type Version string
 
 // Supported versions of Tika Server.
 const (
-	Version119 Version = "1.19"
-	Version120 Version = "1.20"
-	Version121 Version = "1.21"
+	Version119  Version = "1.19"
+	Version120  Version = "1.20"
+	Version121  Version = "1.21"
+	Version122  Version = "1.22"
+	Version123  Version = "1.23"
+	Version124  Version = "1.24"
+	Version125  Version = "1.25"
+	Version126  Version = "1.26"
+	Version127  Version = "1.27"
+	Version128  Version = "1.28"
+	Version1285 Version = "1.28.5"
 )
 
 // Versions is a list of supported versions of Apache Tika.
-var Versions = []Version{Version119, Version120, Version121}
+var Versions = []Version{Version119, Version120, Version121, Version123, Version124, Version125, Version126, Version127, Version128, Version1285}
 
 var sha512s = map[Version]string{
-	Version119: "a9e2b6186cdb9872466d3eda791d0e1cd059da923035940d4b51bb1adc4a356670fde46995725844a2dd500a09f3a5631d0ca5fbc2d61a59e8e0bd95c9dfa6c2",
-	Version120: "a7ef35317aba76be8606f9250893efece8b93384e835a18399da18a095b19a15af591e3997828d4ebd3023f21d5efad62a91918610c44e692cfd9bed01d68382",
-	Version121: "e705c836b2110530c8d363d05da27f65c4f6c9051b660cefdae0e5113c365dbabed2aa1e4171c8e52dbe4cbaa085e3d8a01a5a731e344942c519b85836da646c",
+	Version119:  "a9e2b6186cdb9872466d3eda791d0e1cd059da923035940d4b51bb1adc4a356670fde46995725844a2dd500a09f3a5631d0ca5fbc2d61a59e8e0bd95c9dfa6c2",
+	Version120:  "a7ef35317aba76be8606f9250893efece8b93384e835a18399da18a095b19a15af591e3997828d4ebd3023f21d5efad62a91918610c44e692cfd9bed01d68382",
+	Version121:  "e705c836b2110530c8d363d05da27f65c4f6c9051b660cefdae0e5113c365dbabed2aa1e4171c8e52dbe4cbaa085e3d8a01a5a731e344942c519b85836da646c",
+	Version122:  "9fdb48406f80cab32525d8947e123f90f61e4e9f168d9faea5ab4e0c8e4d2b760ddb62017ef61b1de87cdad642f8d09dea6c21a2a066ea4b34d7ba87003bf79c",
+	Version123:  "4e1b8418aed496eb1ee5bf32921580e855672ab701bffdd642261ac27ae011913f36fdd70b725adef4dec55a53fa04cf0f3b8a3b45e15026dd76c8d312b62291",
+	Version124:  "496bac44144076185506e3693d57de8633e164d1e6ad6c01e69d6f60be8c58350e54f681a2e7f42ac699d3d64f9826c0c3d8e3bc8dbaf718ae0d0b1e6fd2aff2",
+	Version125:  "e2d3f1b0cc711d4cf0d0bcbf9f0a7550da983a11cacc150eba68e59d13e7957d259d8561cd989d20d96f952f897609396c28b165de732c6225d922039865ddd9",
+	Version126:  "aeb064007186153789726287d49a40756beb72a8f68d542610214b8556d0a7ebf17382363aeb9dffb7fbb46201aae06937c2389542bba65a42f34b50ea31eea8",
+	Version127:  "fc7cd6998a05d8b96760c24815cb6cc6f160d990b6f3a5c37b50738e8eff1d304e11c36e84869c31d130b0f0425f9d88ed294a20806f63f5044f2f3ca376c564",
+	Version128:  "7d1b341f334be8effa2749a0ec3e8638be81b3e23728b8abeb756e08f6cef24a64427ee6ed8c441340b20af471a6295cfcb5b9bf648bfe4a03b4c19bea8e258a",
+	Version1285: "b5e465a48153c95d69075cca35b18e75ba87d777a919dc8fa2b902b32740d0121a24ec706644f963f5971493b5a96a48c09b79b7f85f8a50ab3340b3eaa3737d",
 }
 
 // DownloadServer downloads and validates the given server version,

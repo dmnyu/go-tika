@@ -216,6 +216,23 @@ func TestValidateFileHash(t *testing.T) {
 	}
 }
 
+func TestDownloadServer(t *testing.T) {
+	tests := []struct {
+		version Version
+		path    string
+	}{
+		{"1.28.5", "../tika-server-1.28.5.jar"},
+	}
+
+	for _, test := range tests {
+		err := DownloadServer(context.Background(), test.version, test.path)
+		if err != nil {
+			t.Errorf("Error: %s", err.Error())
+		}
+
+	}
+}
+
 func TestDownloadServerError(t *testing.T) {
 	tests := []struct {
 		version Version
